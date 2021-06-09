@@ -67,7 +67,7 @@ export default function Home() {
         {
           projects.map(data => {
             return (
-              <Grid   item xs={12} sm={12} md={12} lg={5} xl={3} spacing={2}>
+              <Grid   item xs={12} sm={5} md={5} lg={3} xl={3} spacing={2}>
                 <ProjectsCard data={data} />
               </Grid>
             )

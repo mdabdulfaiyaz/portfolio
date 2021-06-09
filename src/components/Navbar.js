@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Button, Box, Typography, IconButton, Menu, MenuItem, Collapse } from '@material-ui/core';
+import { AppBar,  Typography,  Collapse } from '@material-ui/core';
+
 import Toolbar from '@material-ui/core/Toolbar';
-import MoreIcon from '@material-ui/icons/MoreVert';
+
 
 
 
@@ -16,26 +17,31 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 10rem',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
-      padding: '0 12rem',
+      padding: '0 12rem', 
     },
   },
   sectionMobile: {
     display: "none",
     [theme.breakpoints.down('sm')]: {
-      display: 'flex',
+      display: 'flex', 
     }
   },
   logo: {
     padding: '0 15rem',
     cursor: 'pointer',
     color: "#262323",
-    fontFamily: 'Brush Script MT',
-    [theme.breakpoints.down('sm')]: {
-      padding: '0 2rem',
-      fontSize: '17px'
-    },
+    fontFamily: 'Brush Script MT', 
     [theme.breakpoints.up('md')]: {
-      padding: '0 5rem',
+      padding: '0 5rem', 
+     fontSize: '45px'
+    },
+    [theme.breakpoints.up('sm')]: {
+      padding: '0 2rem',
+      fontSize: '30px', 
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '0 2rem',
+      fontSize: '20px',
     },
   }
 }))
@@ -43,37 +49,12 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Nav = () => {
-  const classes = useStyles();
-  const [resMenuAnchorEl, setresMenuAnchorEl] = useState(null)
-  const [checked, setchecked] = useState(false)
-  const isResMenu = Boolean(resMenuAnchorEl);
+  const classes = useStyles(); 
+  const [checked, setchecked] = useState(false) 
 
   useEffect(() => {
     setchecked(true);
-  }, [])
-
-  const openResMenu = (e) => {
-    setresMenuAnchorEl(e.currentTarget)
-
-  }
-
-  const closeResMenu = () => {
-    setresMenuAnchorEl(null)
-  }
-
-  const responsiveMenu = (
-    <Menu anchorEl={resMenuAnchorEl} id='responsive-menu' keepMounted open={isResMenu}>
-      <MenuItem onClick={closeResMenu} to='/'>
-        Home
-         </MenuItem>
-      <MenuItem onClick={closeResMenu} to='/About'>
-        About
-         </MenuItem>
-      <MenuItem onClick={closeResMenu} to='/Contact'>
-        Contact
-         </MenuItem>
-    </Menu>
-  )
+  }, []) 
 
   return (
     <>
@@ -81,22 +62,12 @@ const Nav = () => {
       <AppBar position="fixed" className={classes.appbar} elevation={0}>
         <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
           <Toolbar>
-            <Typography variant="h6" style={{ flexGrow: 1 }} className={classes.logo}>
+            <Typography variant="h6"  className={classes.logo}>
               Mohammad Abdul Faiyaz
-          </Typography>
-            <Box className={classes.sectionDesktop}>
-              <Button to='/'>Home</Button>
-              <Button to='/About'>About</Button>
-              <Button to='/Contact'>Contact</Button>
-            </Box>
-            <IconButton color="inherit" onClick={openResMenu} className={classes.sectionMobile}>
-              <MoreIcon />
-            </IconButton>
+            </Typography>    
           </Toolbar>
         </Collapse>
-      </AppBar>
-
-      {responsiveMenu}
+      </AppBar> 
 
     </>
 

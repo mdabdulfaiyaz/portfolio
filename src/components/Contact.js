@@ -58,7 +58,7 @@ const About = () => {
   return (
 
     <Grid container className={classes.root} spacing={0}>
-      <Grid className={classes.introduction} item xs={12} sm={12} md={4} lg={4} xl={7} spacing={2}>
+      <Grid className={classes.introduction} item xs={10} sm={10} md={4} lg={4} xl={7} spacing={2}>
           <Typography style={{color: 'black'}}variant='h5'>
                 Reach Out to me!
           </Typography>

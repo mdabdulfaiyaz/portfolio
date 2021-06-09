@@ -7,7 +7,9 @@ import { skillsSection } from "../portfolio";
 import Displaylottie from './Displaylottie';
 import coding from '../coding.json';
 import Skills from './Skills';
-
+import Proficiency from './Proficiency'
+import Education from './Education'
+import Projects from './Projects'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +53,7 @@ const About = () => {
     Aos.init({duration: 2000});
   }, []);
   return (
-
+    <>
     <Grid data-aos='fade-up' container className={classes.root} spacing={0}>
       <Grid className={classes.introduction} item xs={12} sm={12} md={12} lg={12} xl={12} spacing={2}>
         <Typography variant='h4'>
@@ -80,6 +82,10 @@ const About = () => {
       </Grid>
       <Displaylottie animationData={coding} />
     </Grid>
+         <Proficiency />
+          <Education />
+          <Projects  />
+     </>
   )
 }
 

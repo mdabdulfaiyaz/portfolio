@@ -1,15 +1,11 @@
- import React from "react"
+ import React from "react";
  import './App.css';
-import Navbar from "./components/Navbar" 
+import Navbar from "./components/Navbar" ;
 import { Container } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles" 
+import { makeStyles } from "@material-ui/core/styles" ;
 import Home from './components/Home';
-import About from './components/About'
-import Proficiency from './components/Proficiency'
-import Education from './components/Education'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-
+import About from './components/About'; 
+import Contact from './components/Contact';
 
 
 
@@ -31,10 +27,7 @@ function App() {
   <Container className={classes.root}>
         <Navbar />
         <Home />
-        <About />
-        <Proficiency />
-        <Education />
-        <Projects  />
+        <About /> 
         <Contact />
   </Container>
    

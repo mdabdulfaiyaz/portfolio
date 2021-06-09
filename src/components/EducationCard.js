@@ -1,9 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card'; 
+import CardContent from '@material-ui/core/CardContent'; 
 import Typography from '@material-ui/core/Typography';
 
 
@@ -48,11 +46,11 @@ export default function EducationCard({ education }) {
                 <Typography className={classes.pos}>
                     {education.duration}
                 </Typography>
-                <Typography variant="body2" component="p">
-                    {education.desc}
-                    <br />
-                    <p className="description mt-3">
+                <Typography variant="body2" component="p"> 
+                    <p>
                         {education.desc}
+                        <br />
+                        <br />
                         <ul>
                             {
                                 education.descBullets ?
@@ -63,10 +61,7 @@ export default function EducationCard({ education }) {
                         </ul>
                     </p>
                 </Typography>
-            </CardContent>
-            <CardActions>
-                <Button className={classes.button} size="small">Learn More</Button>
-            </CardActions>
+            </CardContent> 
         </Card>
     );
 }

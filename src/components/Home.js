@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 
   },
   introduction: {
-    margin: 'auto',
-    [theme.breakpoints.down('sm')]: {
+    margin: 'auto', 
+     [theme.breakpoints.down('sm')]: {
       marginBottom: '20rem',
-      color: '#262323',
-    },
+      color: '#262323'
+    }, 
   }
 }));
 
@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <Grid container className={classes.root} spacing={2}>
         <Displaylottie  animationData={thinking} />
-        <Grid className={classes.introduction} item xs={12} sm={6} md={4} lg={4} xl={3} spacing={2}>
+        <Grid className={classes.introduction} item xs={10} sm={10} md={4} lg={4} xl={3} spacing={2}>
           <Typography variant='h4'>
             {greetings.title + " "}
           </Typography>
@@ -49,7 +49,6 @@ export default function Home() {
           <Contactlinks />
         </Grid>
       </Grid> 
-      
     </>
   );
 }
