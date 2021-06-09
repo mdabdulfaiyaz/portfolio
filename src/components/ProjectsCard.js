@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'; 
+import { faFileCode, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'; 
 import { Card, CardActionArea, CardActions, CardContent, CardMedia} from '@material-ui/core'; 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -69,20 +69,38 @@ export default function ProjectCard({ data }) {
             </CardContent>
         </CardActionArea>
             <CardActions>
+            
                 {
                     data.link ?
+                    
                         <Button 
                             className={classes.button}
-                            href={data.link.url}
-                            target="_blank"
+                            href={data.link.url} 
                         >
                             <span>
-                                <FontAwesomeIcon className={classes.logo} icon={faLongArrowAltRight} />
+                                <FontAwesomeIcon style={{marginRight: '7px'}} icon={faLongArrowAltRight} />
                             </span>
                             <span >
                                 {data.link.name}
                             </span>
-                        </Button> : null
+                        </Button> 
+                        : null
+                }
+                {
+                    data.code ?
+                    
+                    <Button 
+                        className={classes.button}
+                        href={data.code.url} 
+                    >
+                        <span>
+                            <FontAwesomeIcon style={{marginRight: '7px'}} icon={faFileCode} />
+                        </span>
+                        <span >
+                            {data.code.name}
+                        </span>
+                    </Button> 
+                    : null
                 }
             </CardActions>
         </Card>

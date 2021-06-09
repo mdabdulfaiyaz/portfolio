@@ -16,11 +16,11 @@ export const openSource = {
 }; 
 
 export const socialLinks = {
-    "facebook": "https://www.facebook.com/1hanzla100",
-    "instagram": "https://www.instagram.com/1hanzla100",
-    "twitter": "https://twitter.com/1hanzla100",
-    "github": "https://github.com/1hanzla100",
-    "linkedin": "https://www.linkedin.com/in/hanzla-tauqeer-0869281ba/"
+    "facebook": "https://www.facebook.com/silent.killer.987",
+    "instagram": "https://www.instagram.com/roasterroder/",
+    "twitter": "https://twitter.com/N00131TA",
+    "github": "https://github.com/noobeetaa",
+    
 }
 
 export const skillsSection = {
@@ -102,7 +102,11 @@ export const projects = [
     link: {
       name: "Disney+",
       url: "https://deeysneyclone.netlify.app/"
-    }
+    },
+    code:{
+      name: 'Code',
+      url: 'https://github.com/noobeetaa/Disneyclone'
+    },
   },
   {
     name: "Whatsapp Clone",
@@ -115,7 +119,11 @@ export const projects = [
     link: {
       name: "Whatsapp",
       url: "https://whtsapclone.netlify.app/"
-    }
+    },
+    code:{
+      name: 'Code',
+      url: 'https://github.com/noobeetaa/Whatsapp-clone'
+    },
   }, 
   {
     name: "Portfolio",
@@ -128,6 +136,10 @@ export const projects = [
     link: {
       name: "portfolio",
       url: "https://noobportfolio.netlify.app/"
+    },
+    code:{
+      name: 'Code',
+      url: 'https://github.com/noobeetaa/portfolio'
     },
   }
 ]
