@@ -29,9 +29,7 @@ function App() {
         <Home />
         <About /> 
         <Contact />
-  </Container>
-   
-    
+  </Container> 
   );
 }
 
