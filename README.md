@@ -9,10 +9,10 @@
 <hr>
 
 - [Sections](#sections)
-- [Getting Started](#gettingstarted)
-- [How to Use](#howtouse)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
 - [Illustrations](#illustrations)
-- [Technologies Used](#technologiesused)
+- [Technologies Used](#technologies-used)
 
 
 
@@ -29,6 +29,7 @@
 
 ✔️ Github Profile
 <br><br/>
+
 ### Getting Started
 <hr>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -63,11 +64,11 @@ $ npm start
 <br><br/>
 
 ### Technologies Used
+
 <hr>
 
 - [React](https://reactjs.org/)
 - [MUI](https://material-ui.com/)
 - [React lottie](https://www.npmjs.com/package/react-lottie)
-- [AOS]()
 <br><br/>
 

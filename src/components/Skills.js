@@ -2,8 +2,7 @@ import React from 'react'
 import {  Grid, Tooltip, Zoom } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5,faCss3Alt, faJs, faReact, faNodeJs, faNpm, faGitAlt} from '@fortawesome/free-brands-svg-icons';
-import { faFireAlt } from '@fortawesome/free-solid-svg-icons' 
+import { faHtml5,faCss3Alt, faJs, faReact, faNodeJs, faNpm, faGitAlt} from '@fortawesome/free-brands-svg-icons'; 
 
 const useStyles = makeStyles((theme) => ({
     box:{
@@ -59,14 +58,7 @@ function Skills() {
             <span >
                 <FontAwesomeIcon icon={faGitAlt}/>
             </span>
-            </Tooltip>
-            <Tooltip TransitionComponent={Zoom} className={classes.html} title={"firebase"}>
-            <span >
-                <FontAwesomeIcon icon={faFireAlt}/>
-            </span>
-            </Tooltip>
-
-
+            </Tooltip> 
             <Tooltip TransitionComponent={Zoom} className={classes.html} title={"Html5"} >
             <span >
                 <FontAwesomeIcon icon={faHtml5}/>

@@ -5,9 +5,13 @@ import {  Typography, Grid, Button } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles'; 
 import Image from '../assets/images/footer.jpg';
 import Contactlinks from './Contactlinks';
+import brown from '@material-ui/core/colors/brown'
 
 
 
+
+
+const textcolor = brown[900]
 const useStyles = makeStyles((theme) => ({
   root: { 
     minHeight: '450px',
@@ -17,7 +21,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: 'cover',
     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.5px)', 
-    
+    button:{
+      textTransform: 'none',
+      color: 'red'
+    }
   },
   introduction: { 
     color: '#ffffff',
@@ -40,14 +47,21 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '5rem',  
       },
   },
+  
   button: {
     backgroundColor: '#ffffff',
     letterSpacing: '2px',
     color: 'black',
+    textTransform: 'none',
     "&:hover": {
         background: 'grey',
-    }
-}
+    },
+    "&$buttonDisabled": {
+      color: textcolor
+  }
+},
+  buttonDisabled: {},
+
 
 }));
 
@@ -63,18 +77,21 @@ const About = () => {
                 Reach Out to me!
           </Typography>
           <br />
-          <Typography variant='body2'>
-          DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL
+          <Typography variant='h6'> 
+          Discuss a project or just want to say hi? My inbox is open for all.
           <br />
-           I'm a Full Stack Web Developer | Android App Developer | Open Source Contributor
+           I'm a Full Stack Web Developer.
           </Typography>
           <br />
-          <Button className={classes.button}>
-          <Typography style={{marginRight: '7px'}}variant='subtitle1'>
+          
+          <Button disabled classes={{ root: classes.button, disabled: classes.buttonDisabled }}>
+             <Typography style={{marginRight: '7px'}}  variant='subtitle1'>
                     Hyderabad, India 
-            </Typography>
+             </Typography>
                 <span><FontAwesomeIcon  icon={faMapMarkerAlt}/></span> 
           </Button>
+          
+          
           <br />
           <br /> 
       <Contactlinks />
@@ -85,8 +102,7 @@ const About = () => {
         </h6>
       <br /> 
     </Grid> 
-    </Grid>
-    
+    </Grid> 
   )
 }
 

@@ -28,12 +28,9 @@ export const skillsSection = {
     subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
     skills: [
       emoji(
-        '⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'
-      ),
-      emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'),
-      emoji(
-        '⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean'
-      ),
+        '⚡ Develop highly interactive Front end / User Interfaces for web applications'
+      ), 
+      emoji('⚡ Deploying of Web Apps using Netlify')
     ], 
 }
 
@@ -54,6 +51,26 @@ export const SkillBars = [
   ]
 
 export const educationInfo = [
+  {
+    schoolName: 'Cognizant College of Commerce and Science',
+    subHeader: 'Bachelor of Commerce (Computers)',
+    duration: ' 2014 - 2017',
+    desc:
+      'Took courses on Software Engineering, and OS.',
+    descBullets: [ 
+    'Participated in Website Development.',
+    'Participated in many online gaming events.',],
+  },
+  {
+    schoolName: 'Gowtham Junior College',
+    subHeader: 'Board of Intermediate Education',
+    duration: ' 2012 - 2014',
+    desc: 'I learned the value of education, build innovative thinking, and a creative approach towards life.',
+    descBullets: [
+      'Participated in Drawing Competetion.',
+      'Participated in Computer Science Summer Program.',
+    ],
+  },
     {
       schoolName: 'Bharat Ratna High School',
       subHeader: 'Board of Secondary Education',
@@ -66,27 +83,7 @@ export const educationInfo = [
         'Participated in various activities such as Debates, Volunteer Work and Sports.',
         'Was a member of  School IT support.'
       ],
-    },
-    {
-      schoolName: 'Gowtham Junior College',
-      subHeader: 'Board of Intermediate Education',
-      duration: ' 2012 - 2014',
-      desc: 'I learned the value of education, build innovative thinking, and a creative approach towards life.',
-      descBullets: [
-        'Participated in Drawing Competetion.',
-        'Participated in Computer Science Summer Program.',
-      ],
-    },
-    {
-      schoolName: 'Cognizant College of Commerce and Science',
-      subHeader: 'Bachelor of Commerce (Computers)',
-      duration: ' 2014 - 2017',
-      desc:
-        'Took courses on Software Engineering, and OS.',
-      descBullets: [ 
-      'Participated in Website Development.',
-      'Participated in many online gaming events.',],
-    },
+    }, 
 ]
 
 
@@ -135,7 +132,7 @@ export const projects = [
     ],
     link: {
       name: "portfolio",
-      url: "https://noobportfolio.netlify.app/"
+      url: "https://portf0lio.netlify.app/"
     },
     code:{
       name: 'Code',

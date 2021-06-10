@@ -2,13 +2,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'; 
-import { Card, CardActionArea, CardActions, CardContent, CardMedia} from '@material-ui/core'; 
+import { Card, CardActionArea, CardActions, CardContent, CardMedia, Link} from '@material-ui/core'; 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles({
     root: { 
+        display: 'block',
         boxShadow: '-2px 1px 82px -50px rgba(0,0,0,0.62)',
         "&:hover": {
             boxShadow: '-1px 1px 86px -30px rgba(0,0,0,0.75)',
@@ -39,7 +40,8 @@ export default function ProjectCard({ data }) {
 
     return (
 
-    <Card className={classes.root} variant="outlined">
+    <Link href={data.link.url} target='_blank'style={{'textDecoration': 'none'}}>
+                    <Card className={classes.root} variant="outlined">
         <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -104,5 +106,6 @@ export default function ProjectCard({ data }) {
                 }
             </CardActions>
         </Card>
+    </Link>
     );
 }
