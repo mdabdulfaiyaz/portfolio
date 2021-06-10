@@ -19,7 +19,7 @@ export const socialLinks = {
     "facebook": "https://www.facebook.com/silent.killer.987",
     "instagram": "https://www.instagram.com/roasterroder/",
     "twitter": "https://twitter.com/N00131TA",
-    "github": "https://github.com/noobeetaa",
+    "github": "https://github.com/mdabdulfaiyaz",
     
 }
 
@@ -105,7 +105,7 @@ export const projects = [
     },
     code:{
       name: 'Code',
-      url: 'https://github.com/noobeetaa/Disneyclone'
+      url: 'https://github.com/mdabdulfaiyaz/Disneyclone'
     },
   },
   {
@@ -122,7 +122,7 @@ export const projects = [
     },
     code:{
       name: 'Code',
-      url: 'https://github.com/noobeetaa/Whatsapp-clone'
+      url: 'https://github.com/mdabdulfaiyaz/Whatsapp-clone'
     },
   }, 
   {
@@ -139,7 +139,7 @@ export const projects = [
     },
     code:{
       name: 'Code',
-      url: 'https://github.com/noobeetaa/portfolio'
+      url: 'https://github.com/mdabdulfaiyaz/portfolio'
     },
   }
 ]
